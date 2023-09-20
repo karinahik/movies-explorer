@@ -23,4 +23,5 @@
 - https://github.com/karinahik/movies-explorer/pull/1
 
 ### Ссылка и api:
-- 
+IP 158.160.79.117
+Frontend https://karina.diplom.nomoredomainsrocks.ru
