@@ -1,10 +1,10 @@
-# movies-explorer-frontend
+# movies-explorer
 
 Дипломная работа по созданию интерактивной страницы, на которой пользователи могут искать фильмы по ключевым словам и добавлять их в избранное в личном кабинете.
 
 ### Функционал:
 + Фронтенд часть проекта.
-
++ Бекэнд часть проекта.
 
 ### Технологии:
 + HTML5
@@ -17,7 +17,10 @@
 - Light - 4
 
 ### Ссылка на репозиторий:
-- https://karinahik.github.io/movies-explorer-frontend/
+- https://github.com/karinahik/movies-explorer
 
 ### Ссылка на pull request:
-- https://github.com/karinahik/movies-explorer-frontend/pull/1
+- https://github.com/karinahik/movies-explorer/pull/1
+
+### Ссылка и api:
+- 
