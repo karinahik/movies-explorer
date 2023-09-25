@@ -1,5 +1,5 @@
 // регулярное выражение для проверки ввода почты
-const REGULAR_EMAIL = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+const REGULAR_EMAIL = "[a-zA-Z0-9_.]+@[a-zA-Z0-9_]+.[a-z]{2,}"
 
 // регулярное выражение для проверки ввода имени
 const REGULAR_NAME = "^[A-Za-zА-Яа-яЁё /s -]+$"
@@ -15,6 +15,15 @@ const TABLET_FILMS = 2
 //  2 элемента карточек
 const MOBILE_FILMS = 2
 
+// Константы цыфровые - разрешения экранов
+const DESKTOP_DISPLAY = 1180
+const TABLET_MOBILE_DISPLAY = 767
+
+// Константы цыфровые - количество карточек
+const COUNTER_CARDS_FILMS_XL = 12
+const COUNTER_CARDS_FILMS_M = 8
+const COUNTER_CARDS_FILMS_L = 5
+
 export {
   REGULAR_EMAIL,
   REGULAR_NAME,
@@ -22,4 +31,9 @@ export {
   DESKTOP_FILMS,
   TABLET_FILMS,
   MOBILE_FILMS,
+  DESKTOP_DISPLAY,
+  TABLET_MOBILE_DISPLAY,
+  COUNTER_CARDS_FILMS_XL,
+  COUNTER_CARDS_FILMS_M,
+  COUNTER_CARDS_FILMS_L,
 }

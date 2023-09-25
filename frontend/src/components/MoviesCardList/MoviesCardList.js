@@ -7,6 +7,11 @@ import {
   DESKTOP_FILMS,
   TABLET_FILMS,
   MOBILE_FILMS,
+  DESKTOP_DISPLAY,
+  TABLET_MOBILE_DISPLAY,
+  COUNTER_CARDS_FILMS_XL,
+  COUNTER_CARDS_FILMS_M,
+  COUNTER_CARDS_FILMS_L,
 } from "../../utils/constants"
 import SearchError from "../SearchError/SearchError"
 
@@ -15,7 +20,6 @@ function MoviesCardList({
   isLoading,
   isSavedFilms,
   savedMovies,
-
   handleLikeFilm,
   ondeleteFilm,
   isReqError,
@@ -26,20 +30,20 @@ function MoviesCardList({
 
   function showFilmDisplay() {
     const display = window.innerWidth
-    if (display > 1180) {
-      setShownMovies(12) // 12 карточек
-    } else if (display > 767) {
-      setShownMovies(8) // 8 карточек
+    if (display > DESKTOP_DISPLAY) {
+      setShownMovies(COUNTER_CARDS_FILMS_XL) // 12 карточек
+    } else if (display > TABLET_MOBILE_DISPLAY) {
+      setShownMovies(COUNTER_CARDS_FILMS_M) // 8 карточек
     } else {
-      setShownMovies(5) // 5 карточек
+      setShownMovies(COUNTER_CARDS_FILMS_L) // 5 карточек
     }
   }
 
   function showFilmDisplayClickButton() {
     const display = window.innerWidth
-    if (display > 1180) {
+    if (display > DESKTOP_DISPLAY) {
       setShownMovies(shownMovies + DESKTOP_FILMS)
-    } else if (display > 767) {
+    } else if (display > TABLET_MOBILE_DISPLAY) {
       setShownMovies(shownMovies + TABLET_FILMS)
     } else {
       setShownMovies(shownMovies + MOBILE_FILMS)

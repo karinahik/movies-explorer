@@ -102,7 +102,7 @@ function App() {
           console.log(err)
         })
     }
-  }, [isLoggedIn, navigate])
+  }, [isLoggedIn])
 
   function registrationUser({ name, email, password }) {
     api
@@ -187,8 +187,6 @@ function App() {
         setIsLoading(false)
       })
   }
-
-
 
   function authorizationError(err) {
     if (err === "Error: 401") {
