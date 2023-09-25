@@ -65,12 +65,20 @@ function Movies({ loggedIn, handleLikeFilm, ondeleteFilm, savedMovies }) {
     }
   }
 
+  // useEffect(() => {
+  //   if (localStorage.getItem("movieSearch")) {
+  //     if (filteredMovies.length === 0) {
+  //     } else {
+  //       setIsNotFound(false)
+  //     }
+  //   }
+  // }, [filteredMovies])
+  
   useEffect(() => {
     if (localStorage.getItem("movieSearch")) {
-      if (filteredMovies.length === 0) {
-      } else {
-        setIsNotFound(false)
-      }
+      setIsNotFound(filteredMovies.length === 0)
+    } else {
+      setIsNotFound(false)
     }
   }, [filteredMovies])
 

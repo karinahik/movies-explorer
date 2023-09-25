@@ -25,6 +25,7 @@ function MoviesCardList({
   isReqError,
   isNotFound,
 }) {
+  console.log(isNotFound, isLoading)
   const { pathname } = useLocation()
   const [shownMovies, setShownMovies] = useState(0)
 

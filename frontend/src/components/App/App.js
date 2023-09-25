@@ -105,6 +105,7 @@ function App() {
   }, [isLoggedIn])
 
   function registrationUser({ name, email, password }) {
+    setIsLoading(true)
     api
       .register(name, email, password)
       .then(() => {
@@ -116,6 +117,9 @@ function App() {
         setInfoToolTipPopupOpen(true)
         setIsSuccess(false)
         console.log(err)
+      })
+      .finally(() => {
+        setIsLoading(false)
       })
   }
 
